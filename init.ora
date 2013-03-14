@@ -1,0 +1,67 @@
+##############################################################################
+# Copyright (c) 1991, 2001, 2002 by Oracle Corporation
+##############################################################################
+ 
+###########################################
+# Cache and I/O
+###########################################
+db_block_size=8192
+ 
+###########################################
+# Cursors and Library Cache
+###########################################
+open_cursors=300
+ 
+###########################################
+# Database Identification
+###########################################
+db_domain=""
+db_name="WCHEN"
+ 
+###########################################
+# File Configuration
+###########################################
+control_files=("/u01/oradata/WCHEN/control01.ctl", "/u01/oradata/WCHEN/control02.ctl")
+db_recovery_file_dest="/u01/app/ora256/fast_recovery_area/WCHEN"
+db_recovery_file_dest_size=52187627
+ 
+###########################################
+# Miscellaneous
+###########################################
+compatible=11.2.0.0.0
+diagnostic_dest=/u01/app/ora256
+ 
+###########################################
+# Processes and Sessions
+###########################################
+processes=30
+sessions=38
+ 
+###########################################
+# SGA Memory
+###########################################
+sga_target=700m
+ 
+###########################################
+# Security and Auditing
+###########################################
+audit_file_dest="/u01/app/ora256/admin/WCHEN/adump"
+audit_trail=db
+remote_login_passwordfile=EXCLUSIVE
+ 
+###########################################
+# Shared Server
+###########################################
+dispatchers="(PROTOCOL=TCP) (SERVICE=WCHENXDB)"
+ 
+###########################################
+# Sort, Hash Joins, Bitmap Indexes
+###########################################
+pga_aggregate_target=104857600
+ 
+###########################################
+# System Managed Undo and Rollback Segments
+###########################################
+undo_tablespace=UNDOTBS1
+ 
+ 

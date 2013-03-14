@@ -1,0 +1,22 @@
+WCHEN.__oracle_base='/home/courses/w/c/wchen'#ORACLE_BASE set from environment
+*.audit_file_dest='/u01/app/ora256/admin/WCHEN/adump'
+*.audit_trail='db'
+*.compatible='11.2.0.0.0'
+*.control_files='/u01/oradata/WCHEN/control01.ctl','/u01/oradata/WCHEN/control02.ctl'
+*.db_block_size=8192
+*.db_cache_size=83886080
+*.db_domain=''
+*.db_name='WCHEN'
+*.db_recovery_file_dest='/u01/app/ora256/fast_recovery_area/WCHEN'
+*.db_recovery_file_dest_size=52187627
+*.diagnostic_dest='/u01/app/ora256'
+*.dispatchers='(PROTOCOL=TCP) (SERVICE=WCHENXDB)'
+*.java_pool_size=4194304
+*.large_pool_size=4194304
+*.open_cursors=300
+*.pga_aggregate_target=104857600
+*.processes=150	
+*.remote_login_passwordfile='EXCLUSIVE'
+*.sessions=38
+*.shared_pool_size=330023424
+*.undo_tablespace='UNDOTBS1'
