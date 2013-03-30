@@ -6,6 +6,8 @@
 # Cache and I/O
 ###########################################
 db_block_size=8192
+db_cache_size=83886080
+#db_cache_size=104857600
  
 ###########################################
 # Cursors and Library Cache
@@ -16,14 +18,13 @@ open_cursors=300
 # Database Identification
 ###########################################
 db_domain=""
-db_name="WCHEN"
+db_name="JDOYLE"
  
 ###########################################
 # File Configuration
 ###########################################
-control_files=("/u01/oradata/WCHEN/control01.ctl", "/u01/oradata/WCHEN/control02.ctl")
-db_recovery_file_dest="/u01/app/ora256/fast_recovery_area/WCHEN"
-db_recovery_file_dest_size=52187627
+control_files=("/u01/oradata/JDOYLE/control01.ctl", "/u01/oradata/JDOYLE/control02.ctl")
+db_files=40
  
 ###########################################
 # Miscellaneous
@@ -32,32 +33,28 @@ compatible=11.2.0.0.0
 diagnostic_dest=/u01/app/ora256
  
 ###########################################
-# Processes and Sessions
+# Pools
 ###########################################
-processes=30
-sessions=38
+java_pool_size=0
+large_pool_size=0
+shared_pool_size=286816732
  
 ###########################################
-# SGA Memory
+# Processes and Sessions
 ###########################################
-sga_target=700m
+processes=150
  
 ###########################################
 # Security and Auditing
 ###########################################
-audit_file_dest="/u01/app/ora256/admin/WCHEN/adump"
+audit_file_dest="/u01/app/ora256/admin/JDOYLE/adump"
 audit_trail=db
 remote_login_passwordfile=EXCLUSIVE
  
 ###########################################
-# Shared Server
-###########################################
-dispatchers="(PROTOCOL=TCP) (SERVICE=WCHENXDB)"
- 
-###########################################
 # Sort, Hash Joins, Bitmap Indexes
 ###########################################
-pga_aggregate_target=104857600
+pga_aggregate_target=10485760
  
 ###########################################
 # System Managed Undo and Rollback Segments
